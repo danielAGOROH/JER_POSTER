@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posters Personnalisés</title>
+  <link rel="stylesheet" href="JER.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">PosterPro</h1>
+    <nav>
+      <ul>
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#personnalisation">Personnalisation</a></li>
+        <li><button id="openCommande">Commande</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="catalogue" class="section-bulle">
+    <h2>Catalogue</h2>
+    <div class="image-livre">
+      <img src="" alt="Poster 1">
+      <img src="PHOTO/IMG-20250803-WA0986.jpg" alt="Poster 1">
+      <img src="PHOTO/IMG-20250803-WA0987.jpg" alt="Poster 2">
+      <img src="PHOTO/IMG-20250803-WA0988.jpg" alt="Poster 3">
+      <img src="PHOTO/IMG-20250803-WA0992.jpg" alt="Poster 4">
+    </div>
+   
+  </section>
+
+  <section id="personnalisation" class="section-bulle">
+    <h2>Personnalisation</h2>
+    <p>Ajoutez votre propre photo, choisissez la taille, et laissez-nous créer votre poster unique.</p>
+  </section>
+
+  <section id="commande" class="commande-bulle hidden">
+    <h2>Passer une commande</h2>
+    <form action="https://formspree.io/f/mnqwozkp" method="POST" enctype="multipart/form-data">
+      <input type="text" name="Nom" placeholder="Nom" required>
+      <input type="tel" name="Téléphone" placeholder="Numéro de téléphone" required>
+      <select name="Taille" required>
+        <option value="">Choisissez la taille</option>
+        <option value="A5">A5 – 500 FCFA</option>
+        <option value="80x75">80×75 cm – 3000 FCFA</option>
+        <option value="26x37">26×37 cm – 1000 FCFA</option>
+      </select>
+      <label>Image personnalisée :</label>
+      <input type="file" name="Image" accept="image/*" required>
+      <label>Preuve de paiement :</label>
+      <input type="file" name="Paiement" accept="image/*" required>
+      <p>Flooz / Mixx : <strong>91251206</strong></p>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PosterPro — Contact : danoagoroh@gmail.com</p>
+  </footer>
+
+  <script src="JER.js"></script>
+</body>
+</html>
